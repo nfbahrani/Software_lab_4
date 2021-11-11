@@ -1,12 +1,17 @@
-package AbstractFactory.Models;
+package Prototype.Test;
 
+import AbstractFactory.Models.IranianGardenCreator;
+import Prototype.Models.AbstractFlower;
+import Prototype.Models.AbstractTree;
+import Prototype.Models.Chenar;
+import Prototype.Models.Khatmi;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class IranianGardenCreatorTest {
-    IranianGardenCreator iranianGardenCreator;
+    AbstractFactory.Models.IranianGardenCreator iranianGardenCreator;
 
     @BeforeEach
     void setUp() {
