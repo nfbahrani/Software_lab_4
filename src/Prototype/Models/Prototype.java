@@ -1,5 +1,6 @@
 package Prototype.Models;
 
 public interface Prototype {
-    public Prototype clone();
+    int code = 0;
+    public Prototype clonePrototype() throws CloneNotSupportedException;
 }
