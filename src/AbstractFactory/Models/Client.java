@@ -1,7 +1,12 @@
 package AbstractFactory.Models;
 
 public class Client {
-    AbstractGardenCreator gardenCreator;
+    public AbstractGardenCreator getGardenCreator() {
+        return gardenCreator;
+    }
+
+    private AbstractGardenCreator gardenCreator;
+
     public void contractWithGardenCreator(AbstractGardenCreator gardenCreator) {
         this.gardenCreator = gardenCreator;
     }
@@ -13,5 +18,4 @@ public class Client {
     public AbstractTree getTree() {
         return this.gardenCreator.createTree();
     }
-
 }

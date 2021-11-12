@@ -5,7 +5,7 @@ public class Client {
         return prototype;
     }
 
-    public void createPrototype(int type) {
+    public Prototype createPrototype(int type) {
         switch (type) {
             case 1:
                 this.prototype = new ConcretePrototype1();
@@ -16,6 +16,7 @@ public class Client {
             default:
                 break;
         }
+        return null;
     }
 
     Prototype prototype;
@@ -27,5 +28,4 @@ public class Client {
             return null;
         }
     }
-
 }

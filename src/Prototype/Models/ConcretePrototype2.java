@@ -1,7 +1,5 @@
 package Prototype.Models;
 
-import java.util.Random;
-
 public class ConcretePrototype2 implements Prototype, java.lang.Cloneable {
     public void setCode(int code) {
         this.code = code;
@@ -14,7 +12,7 @@ public class ConcretePrototype2 implements Prototype, java.lang.Cloneable {
     private int code;
 
     @Override
-    public Prototype clonePrototype() throws CloneNotSupportedException {
+    public ConcretePrototype2 clonePrototype() throws CloneNotSupportedException {
         return (ConcretePrototype2) this.clone();
     }
 }

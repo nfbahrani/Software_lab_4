@@ -1,7 +1,6 @@
 package Prototype.Models;
 
-public class ConcretePrototype1 implements Prototype {
-
+public class ConcretePrototype1 implements Prototype, java.lang.Cloneable {
     public void setCode(int code) {
         this.code = code;
     }
@@ -13,8 +12,7 @@ public class ConcretePrototype1 implements Prototype {
     private int code;
 
     @Override
-    public Prototype clonePrototype() {
-        return this;
+    public ConcretePrototype1 clonePrototype() throws CloneNotSupportedException {
+        return (ConcretePrototype1) this.clone();
     }
-
 }
