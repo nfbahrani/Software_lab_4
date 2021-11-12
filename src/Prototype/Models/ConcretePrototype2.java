@@ -13,10 +13,6 @@ public class ConcretePrototype2 implements Prototype, java.lang.Cloneable {
 
     private int code;
 
-    public ConcretePrototype2(int code) {
-        this.code = code;
-    }
-
     @Override
     public Prototype clonePrototype() throws CloneNotSupportedException {
         return (ConcretePrototype2) this.clone();
